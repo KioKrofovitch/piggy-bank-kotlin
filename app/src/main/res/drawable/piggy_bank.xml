@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:viewportWidth="300"
+    android:viewportHeight="300"
+    android:width="300dp"
+    android:height="300dp" >
+
+    <path
+        android:strokeColor="@color/piggy_bank_pink"
+        android:strokeWidth="5"
+        android:pathData="M100,100 l100,0 l0,100 l-100,0 z"
+        />
+
+</vector>

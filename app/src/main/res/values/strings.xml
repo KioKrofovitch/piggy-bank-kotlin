@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Piggy Bank Kotlin</string>
+    <string name="piggy_bank">Piggy bank</string>
+    <string name="twenty_five_cents" formatted="false">25\u00A2</string>
+    <string name="ten_cents" formatted="false">10\u00A2</string>
+    <string name="five_cents" formatted="false">5\u00A2</string>
+    <string name="one_cent" formatted="false">1\u00A2</string>
+
 </resources>

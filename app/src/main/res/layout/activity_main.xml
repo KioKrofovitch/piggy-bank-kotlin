@@ -9,8 +9,56 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.kio.piggybankkotlin.MainActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/image_piggy_bank"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/piggy_bank"
+        android:src="@drawable/piggy_bank" />
+
+    <LinearLayout
+        android:id="@+id/layout_coin_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_piggy_bank"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_quarter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/twenty_five_cents" />
+
+        <Button
+            android:id="@+id/button_dime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ten_cents" />
+
+        <Button
+            android:id="@+id/button_nickel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/five_cents" />
+
+        <Button
+            android:id="@+id/button_penny"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/one_cent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_running_total"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="45sp"
+        tools:text="$23.00"/>
 </RelativeLayout>
