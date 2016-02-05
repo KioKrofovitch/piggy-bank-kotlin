@@ -12,12 +12,25 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        button_quarter.setOnClickListener {piggyBank.addQuarter()}
-        button_dime.setOnClickListener {piggyBank.addDime()}
-        button_nickel.setOnClickListener { piggyBank.addNickel() }
-        button_penny.setOnClickListener { piggyBank.addPenny() }
+        button_quarter.setOnClickListener {
+            piggyBank.addQuarter()
+            text_running_total.setText(piggyBank.runningTotal.toString())
+        }
 
-        text_running_total.setText(piggyBank.getRunningTotal().toString())
+        button_dime.setOnClickListener {
+            piggyBank.addDime()
+            text_running_total.setText(piggyBank.runningTotal.toString())
+        }
+
+        button_nickel.setOnClickListener {
+            piggyBank.addNickel()
+            text_running_total.setText(piggyBank.runningTotal.toString())
+        }
+
+        button_penny.setOnClickListener {
+            piggyBank.addPenny()
+            text_running_total.setText(piggyBank.runningTotal.toString())
+        }
     }
 
 }

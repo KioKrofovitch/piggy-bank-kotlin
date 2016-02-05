@@ -7,29 +7,36 @@ package com.example.kio.piggybankkotlin
 class PiggyBank {
 
     // TODO: KIO Blog post
-    // Do I need private? Do I need to initialize? What's the advantage of lateinit? Also what is synthetic Properties?
+    // Do I need private? Do I need to initialize?
+    // What's the advantage of lateinit? Also what is synthetic Properties?
     private var numQuarters: Int = 0
     private var numDimes: Int = 0
     private var numNickels: Int = 0
     private var numPennies: Int = 0
 
+    var runningTotal: Double = 0.0
+
     fun addQuarter() {
-        numQuarters += numQuarters
+        numQuarters += 1
+        updateRunningTotal()
     }
 
     fun addDime() {
-        numDimes += numDimes
+        numDimes += 1
+        updateRunningTotal()
     }
 
     fun addNickel() {
-        numNickels += numNickels
+        numNickels += 1
+        updateRunningTotal()
     }
 
     fun addPenny() {
-        numPennies += numPennies
+        numPennies += 1
+        updateRunningTotal()
     }
 
-    fun getRunningTotal(): Double {
-        return (numQuarters*25 + numDimes*10 + numNickels*5 + numPennies)/100.00
+    fun updateRunningTotal() {
+        runningTotal = (numQuarters*25 + numDimes*10 + numNickels*5 + numPennies)/100.00
     }
 }
